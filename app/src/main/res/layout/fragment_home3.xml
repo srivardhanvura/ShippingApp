@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Shipment details"
+            android:textSize="20sp" />
+
+        <fragment
+            android:id="@+id/map3"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="10dp" />
+
+        <!--        <ProgressBar-->
+        <!--            android:id="@+id/progress"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true" />-->
+
+        <TextView
+            android:id="@+id/weight_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map3"
+            android:layout_marginTop="25dp"
+            android:text="Weight(in KG)"
+            android:textSize="16sp" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/weight_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_txt"
+            android:layout_marginHorizontal="10dp"
+            app:bsb_bubble_color="@color/teal"
+            app:bsb_bubble_text_color="@color/white"
+            app:bsb_max="50.0"
+            app:bsb_min="0"
+            app:bsb_progress="0"
+            app:bsb_second_track_color="@color/teal"
+            app:bsb_section_count="1"
+            app:bsb_section_text_position="below_section_mark"
+            app:bsb_show_progress_in_float="false"
+            app:bsb_show_section_mark="true"
+            app:bsb_show_section_text="true"
+            app:bsb_show_thumb_text="true"
+            app:bsb_track_color="#96C0C5" />
+
+        <TextView
+            android:id="@+id/height_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weight_seek"
+            android:layout_marginTop="25dp"
+            android:text="Height(in CM)"
+            android:textSize="16sp" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/height_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/height_txt"
+            android:layout_marginHorizontal="10dp"
+            app:bsb_bubble_color="#78698C"
+            app:bsb_bubble_text_color="@color/white"
+            app:bsb_max="40.0"
+            app:bsb_min="0"
+            app:bsb_progress="0"
+            app:bsb_second_track_color="#78698C"
+            app:bsb_section_count="1"
+            app:bsb_section_text_position="below_section_mark"
+            app:bsb_show_progress_in_float="false"
+            app:bsb_show_section_mark="true"
+            app:bsb_show_section_text="true"
+            app:bsb_show_thumb_text="true"
+            app:bsb_track_color="#A196B0" />
+
+        <TextView
+            android:id="@+id/width_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/height_seek"
+            android:layout_marginTop="25dp"
+            android:text="Width(in CM)"
+            android:textSize="16sp" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/width_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/width_txt"
+            android:layout_marginHorizontal="10dp"
+            app:bsb_bubble_color="#A57050"
+            app:bsb_bubble_text_color="@color/white"
+            app:bsb_max="45.0"
+            app:bsb_min="0"
+            app:bsb_progress="0"
+            app:bsb_second_track_color="#A57050"
+            app:bsb_section_count="1"
+            app:bsb_section_text_position="below_section_mark"
+            app:bsb_show_progress_in_float="false"
+            app:bsb_show_section_mark="true"
+            app:bsb_show_section_text="true"
+            app:bsb_show_thumb_text="true"
+            app:bsb_track_color="#D1B29F" />
+
+        <TextView
+            android:id="@+id/length_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/width_seek"
+            android:layout_marginTop="25dp"
+            android:text="Length(in CM)"
+            android:textSize="16sp" />
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/length_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/length_txt"
+            android:layout_marginHorizontal="10dp"
+            app:bsb_bubble_color="#626B61"
+            app:bsb_bubble_text_color="@color/white"
+            app:bsb_max="55.0"
+            app:bsb_min="0"
+            app:bsb_progress="0"
+            app:bsb_second_track_color="#626B61"
+            app:bsb_section_count="1"
+            app:bsb_section_text_position="below_section_mark"
+            app:bsb_show_progress_in_float="false"
+            app:bsb_show_section_mark="true"
+            app:bsb_show_section_text="true"
+            app:bsb_show_thumb_text="true"
+            app:bsb_track_color="#A0A89F" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/recEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/length_seek"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/recEmailEt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Receiver's email"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_home3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recEmail"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>

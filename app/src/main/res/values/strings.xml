@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ShippingApp</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="navigation_open">Open navigation drawer</string>
+    <string name="navigation_close">Close navigation drawer</string>
+    <string name="Rs">\u20B9</string>
+    <string name="view_pricing_as_per_weight"><u>View pricing as per weight</u></string>
+    <string name="view_pricing_as_per_distance"><u>View pricing as per distance</u></string>
+
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Track orders</item>
+        <item>Previous bookings</item>
+        <item>Profile</item>
+        <item>About</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

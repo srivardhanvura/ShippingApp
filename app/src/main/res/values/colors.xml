@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DF5353</color>
+    <color name="colorPrimaryDark">#be2323</color>
+    <color name="colorAccent">#8D7F9F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="lavender">#6A5D7B</color>
+    <color name="green">#B8DB6B</color>
+    <color name="melon">#F7B1AB</color>
+    <color name="teal">#508991</color>
+    <color name="max_red">#D62828</color>
+    <color name="ucrop_color_toolbar">#F7B1AB</color>
+    <color name="ucrop_color_statusbar">#D62828</color>
+    <color name="ucrop_color_widget_active">#508991</color>
+</resources>

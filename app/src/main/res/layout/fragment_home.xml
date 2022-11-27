@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_red">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+        <fragment
+            android:id="@+id/map1"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@id/sv_view"
+            android:layout_marginTop="10dp" />
+
+        <SearchView
+            android:id="@+id/sv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_round"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Shipping from? Enter city name" />
+
+
+        <Button
+            android:id="@+id/submit_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gps1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btn"
+            android:text="Next" />
+
+        <ImageButton
+            android:id="@+id/gps1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map1"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_gps" />
+
+    </RelativeLayout>
+</ScrollView>
